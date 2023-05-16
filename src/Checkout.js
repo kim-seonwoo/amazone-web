@@ -28,6 +28,7 @@ function Checkout() {
                 rating={item.rating}
               />
             ))}
+            {/* map을 이용하여 basket의 정보를 checkoutproduct에게 전해서 */}
           </div>
         </div>
         <div className="checkout_right">

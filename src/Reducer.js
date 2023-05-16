@@ -34,6 +34,13 @@ const reducer = (state, action) => {
         ...state,
         user: action.user,
       };
+
+    case "EMPTY_BASKET":
+      return {
+        ...state,
+        basket: [],
+      };
+    //장바구니를 비워줌
     default:
       return state;
   }

@@ -7,6 +7,8 @@ import Login from "./Login";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
+import Orders from "./Orders";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -33,6 +35,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/orders" element={<Orders />} />
         </Routes>
       </div>
     </Router>
@@ -40,3 +44,5 @@ function App() {
 }
 
 export default App;
+
+// https://e-clone-web-eddc0.web.app/

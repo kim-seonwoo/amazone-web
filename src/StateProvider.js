@@ -9,3 +9,5 @@ export const StateProvider = ({ reducer, initialState, children }) => (
 );
 
 export const useStateValue = () => useContext(StateContext);
+
+//context 자체를 환경설정
